@@ -1,0 +1,393 @@
+/* ..........logo section.................. */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header__flex-container__icon--menu,
+.header__flex-container__icon--account a,
+.header__flex-container__icon--store-locator,
+.header__flex-container__icon--bag {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__flex-container__icon__label {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.header__flex-container__logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo img {
+    width: 100px;
+}
+
+.search-box-wrapper {
+    position: relative;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box__input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-box__input__submit {
+    background: none;
+    border: none;
+    margin-left: -35px;
+    cursor: pointer;
+}
+
+.hide-mobile-up {
+    display: none;
+}
+
+.hide-mobile-down {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hide-mobile-up {
+        display: block;
+    }
+
+    .hide-mobile-down {
+        display: none;
+    }
+
+    .search-box-wrapper {
+        width: 100%;
+    }
+
+    .search-box__input {
+        width: calc(100% - 35px);
+    }
+}
+
+/* Additional CSS to reduce space between the Sign in, Find a store, and Bag elements */
+.header__flex-container__icon--account,
+.header__flex-container__icon--store-locator,
+.header__flex-container__icon--bag {
+    margin-left: 10px; /* Adjust this value as needed to reduce the space */
+}
+
+.header__flex-container__icon--account:first-child,
+.header__flex-container__icon--store-locator:first-child,
+.header__flex-container__icon--bag:first-child {
+    margin-left: 0;
+}
+
+
+
+
+
+/* ...... */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.promo {
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.user-actions a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+nav ul li a {
+    color: #333;
+}
+
+.user-actions a {
+    margin-left: 15px;
+    color: #333;
+}
+
+/* Banner Section */
+.banner {
+    background: url('banner-dummy.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    margin-bottom: 20px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    margin: 5px;
+}
+
+
+
+/* Featured Products */
+.featured-products, .more-deals {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card, .deal-card {
+    text-align: center;
+}
+
+.product-card img, .deal-card img {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer-section {
+    width: 20%;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-media a {
+    color: #000;
+    font-size: 24px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #0073e6;
+}
+
+.app-download a img {
+    width: 135px;
+    height: 40px;
+    margin: 10px 5px;
+}
+
+.footer-legal {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-legal p {
+    margin-bottom: 10px;
+}
+
+.footer-legal ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-legal ul li {
+    margin: 0 10px;
+}
+
+.footer-legal ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        margin: 0 0 10px 0;
+    }
+}

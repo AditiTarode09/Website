@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cards.css">
+
+    <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar" style="color: rgb(50, 49, 49);"></div>
+    
+        <div class="header__flex-container">
+            <div class="header__flex-container__icon--menu hide-mobile-up" aria-expanded="false" aria-label="open menu navigation" tabindex="0" role="button">
+                <i class="fas fa-bars"></i>
+                <span class="header__flex-container__icon__label">SHOP</span>
+            </div>
+            <div class="header__flex-container__logo" style="margin-right: 20px;"> <!-- Adjust the margin-right value as needed -->
+                <a href="/" class="site-logo site-logo--dsw">
+                    <img class="hide-mobile-up" src="https://images.dsw.com/is/image/DSWShoes/DSW-logo-small" alt="DSW, return to home page">
+                    <img class="hide-mobile-down" src="https://images.dsw.com/is/image/DSWShoes/DSW-logo-small" alt="DSW, return to home page">
+                </a>
+            </div>
+            <div class="header__flex-container__icon--search-box">
+                <div role="search" class="search-box-wrapper hide-mobile-down" aria-label="dsw">&nbsp;&nbsp;
+                    <form novalidate name="searchForm" class="search-form">
+                        <div id="search-box" class="search-box">
+                            <input type="text" tabindex="0" id="searchboxDesktop" name="search" autocomplete="off" class="search-box__input" placeholder="Search styles, brands" aria-label="Search DSW" role="combobox">
+                            <button type="submit" class="search-box__input__submit" aria-label="submit search">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="hide-mobile-up">
+                    <button class="search-box__mobile" aria-label="toggle search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="header__flex-container__icon--account" style="display: flex; align-items: center; margin-left: auto;">
+                <a href="/account" aria-label="Sign in">
+                    <i class="fas fa-user"></i>
+                    <span class="header__flex-container__icon__label">Sign in</span>
+                </a>
+            </div>
+            <a href="/store-locator" class="header__flex-container__icon--store-locator" style="display: flex; align-items: center; margin-left: 10px;" aria-label="Find a store">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="header__flex-container__icon__label">Find a store</span>
+            </a>
+            <a href="/shopping-bag" class="header__flex-container__icon--bag" style="display: flex; align-items: center; margin-left: 10px;" aria-label="bag, no items in bag">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="header__flex-container__icon__label">Bag</span>
+            </a>
+        </div>  
+
+        <!-- .................................................................. -->
+    
+        
+
+        <!-- ......................................................... -->
+    
+        <nav>
+            <ul>
+                <li class="dropdown"><a href="#">Women</a>
+                    <div class="dropdown-content">
+                        <div class="column">
+                            <h4>Shoes</h4>
+                            <a href="#">Athletic & Sneakers</a>
+                            <a href="#">Boots & Booties</a>
+                            <a href="#">Casual Shoes</a>
+                            <a href="#">Clogs</a>
+                            <a href="#">Comfort Shoes</a>
+                            <a href="#">Dress Shoes</a>
+                            <a href="#">Espadrilles</a>
+                            <a href="#">Flats</a>
+                            <a href="#">Heels</a>
+                            <a href="#">Loafers</a>
+                            <a href="#">Mary Janes</a>
+                            <a href="#">Mules</a>
+                        </div>
+                        <div class="column">
+                            <h4>Sandals</h4>
+                            <a href="#">Casual Sandals</a>
+                            <a href="#">Comfort Sandals</a>
+                            <a href="#">Dress Sandals</a>
+                            <a href="#">Flat Sandals</a>
+                            <a href="#">Flip Flops & Slide Sandals</a>
+                            <a href="#">Athletic Shoes & Sneakers</a>
+                            <h4>Fashion & Lifestyle Sneakers</h4>
+                            <a href="#">Running Shoes</a>
+                            <a href="#">Slip-On Sneakers</a>
+                            <a href="#">Walking Shoes</a>
+                        </div>
+                        <div class="column">
+                            <h4>Activewear & Apparel</h4>
+                            <a href="#">Bridal & Wedding Shoes</a>
+                            <a href="#">Functional Shoes</a>
+                            <a href="#">Prom & Homecoming</a>
+                            <a href="#">Summer Shop</a>
+                            <a href="#">Styles You'll Love</a>
+                            <a href="#">Work & Safety Shoes</a>
+                            <a href="#">New Arrivals</a>
+                            <a href="#">Clearance</a>
+                        </div>
+                        <div class="column size-column">
+                            <h4>Shop By Shoe Size</h4>
+                            <!-- <div class="sizes">
+                                <a href="#">4</a><a href="#">4.5</a><a href="#">5</a><a href="#">5.5</a><a href="#">6</a>
+                                <a href="#">6.5</a><a href="#">7</a><a href="#">7.5</a><a href="#">8</a><a href="#">8.5</a>
+                                <a href="#">9</a><a href="#">9.5</a><a href="#">10</a><a href="#">10.5</a><a href="#">11</a>
+                                <a href="#">11.5</a><a href="#">12</a><a href="#">13</a>
+                            </div> -->
+                            <h4>Widths</h4>
+                            <a href="#">Narrow Width</a>
+                            <a href="#">Wide Width</a>
+                            <a href="#">Wide Calf</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Bags & Accessories</a></li>
+                <li><a href="#">Athletic & Sneakers</a></li>
+                <li><a href="#">Shops</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Clearance</a></li>
+                <li><a href="#">Deals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner Section -->
+        <section class="banner" style="background-image: url('./images/sandles.jpg'); background-size: 100% auto;">
+            <div class="banner-content">
+                <h1>Sandals Under $50</h1>
+                <p>Explore sandal season's top styles at the best prices.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Shop Women's</a>
+                    <a href="#" class="btn">Shop Men's</a>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <div class="row">
+            <!-- Card 1: Women's Sandals -->
+            <div class="editorial__tile editorial__tile__peaking-tile editorial__tile__more-tiles editorial__tile__grid">
+                <div class="editorial__tile__container">
+                    <a class="editorial__tile__image" href="/category/womens/shoes/sandals?cm_re=hp-hp-20240513-summertrending-editorial4-sandalsw">
+                        <img src="https://images.dsw.com/is/image/DSWShoes/456462_650_ss_05?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Women's Sandals">
+                    </a>
+                    <div class="editorial__tile__header dbi-heading-5">
+                        <a class="editorial__tile__header--copy" href="/category/womens/shoes/sandals?cm_re=hp-hp-20240513-summertrending-editorial4-sandalsw">Women's Sandals</a>
+                    </div>
+                    <p class="editorial__tile__sub-header dbi-body-1"></p>
+                </div>
+            </div>
+        
+            <!-- Card 2: Women's Sneakers -->
+            <div class="editorial__tile editorial__tile__peaking-tile editorial__tile__more-tiles editorial__tile__grid">
+                <div class="editorial__tile__container">
+                    <a class="editorial__tile__image" href="/category/womens/shoes/athletic-sneakers/fashion?cm_re=hp-hp-20240513-summertrending-editorial4-fashionsneakersw">
+                        <img src="https://images.dsw.com/is/image/DSWShoes/561344_200_ss_05?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Women's Sneakers">
+                    </a>
+                    <div class="editorial__tile__header dbi-heading-5">
+                        <a class="editorial__tile__header--copy" href="/category/womens/shoes/athletic-sneakers/fashion?cm_re=hp-hp-20240513-summertrending-editorial4-fashionsneakersw">Women's Sneakers</a>
+                    </div>
+                    <p class="editorial__tile__sub-header dbi-body-1"></p>
+                </div>
+            </div>
+        
+            <!-- Card 3: Women's Platform -->
+            <div class="editorial__tile editorial__tile__peaking-tile editorial__tile__more-tiles editorial__tile__grid">
+                <div class="editorial__tile__container">
+                    <a class="editorial__tile__image" href="/category/womens/shoes?style=Platform&amp;cm_re=hp-hp-20240528-summertrending-editorial4-platform">
+                        <img src="https://images.dsw.com/is/image/DSWShoes/542978_250_ss_05?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Women's Platform">
+                    </a>
+                    <div class="editorial__tile__header dbi-heading-5">
+                        <a class="editorial__tile__header--copy" href="/category/womens/shoes?style=Platform&amp;cm_re=hp-hp-20240528-summertrending-editorial4-platform">Women's Platform</a>
+                    </div>
+                    <p class="editorial__tile__sub-header dbi-body-1"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- Card 4: Men's Sneakers -->
+            <div class="editorial__tile editorial__tile__peaking-tile editorial__tile__more-tiles editorial__tile__grid">
+                <div class="editorial__tile__container">
+                    <a class="editorial__tile__image" href="/category/mens/shoes/athletic-sneakers/fashion?cm_re=hp-hp-20240520-summertrending-editorial4-fashionsneakersm">
+                        <img src="https://images.dsw.com/is/image/DSWShoes/570955_100_ss_03?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Men's Sneakers">
+                    </a>
+                    <div class="editorial__tile__header dbi-heading-5">
+                        <a class="editorial__tile__header--copy" href="/category/mens/shoes/athletic-sneakers/fashion?cm_re=hp-hp-20240520-summertrending-editorial4-fashionsneakersm">Men's Sneakers</a>
+                    </div>
+                    <p class="editorial__tile__sub-header dbi-body-1"></p>
+                </div>
+            </div>
+        
+            <!-- Card 5: Women's Flats -->
+            <div class="editorial__tile editorial__tile__peaking-tile editorial__tile__more-tiles editorial__tile__grid">
+                <div class="editorial__tile__container">
+                    <a class="editorial__tile__image" href="/category/womens/shoes/flats?cm_re=hp-hp-20240513-summertrending-editorial4-flats">
+                        <img src="https://images.dsw.com/is/image/DSWShoes/574833_183_ss_05?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Women's Flats">
+                    </a>
+                    <div class="editorial__tile__header dbi-heading-5">
+                        <a class="editorial__tile__header--copy" href="/category/womens/shoes/flats?cm_re=hp-hp-20240513-summertrending-editorial4-flats">Women's Flats</a>
+                    </div>
+                    <p class="editorial__tile__sub-header dbi-body-1"></p>
+                </div>
+            </div>
+        
+            <!-- Card 6: Men's Sandals -->
+            <div class="editorial__tile editorial__tile__no-margin editorial__tile__peaking-tile editorial__tile__more-tiles editorial__tile__grid">
+                <div class="editorial__tile__container">
+                    <a class="editorial__tile__image" href="/category/mens/shoes/sandals?cm_re=hp-hp-20240520-summertrending-editorial4-sandalsm">
+                        <img src="https://images.dsw.com/is/image/DSWShoes/501344_200_ss_05?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Men's Sandals">
+                    </a>
+                    <div class="editorial__tile__header dbi-heading-5">
+                        <a class="editorial__tile__header--copy" href="/category/mens/shoes/sandals?cm_re=hp-hp-20240520-summertrending-editorial4-sandalsm">Men's Sandals</a>
+                    </div>
+                    <p class="editorial__tile__sub-header dbi-body-1"></p>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="editorial-widget-container">
+            <div class="editorial-widget widget-wrapper--peaking-tile spacing-side--inset">
+                <div class="editorial-widget__header">
+                    <h2 class="dbi-heading-3">High Temps. Low Prices.</h2>
+                </div>
+                <div class="editorial-widget__body">
+                    <div class="card-container">
+                        <!-- Card 1: Ballet Flats Under $75 -->
+                        <div class="card">
+                            <a href="/category/womens/shoes/flats?price_range=-75&amp;style=Ballet&amp;cm_re=hp-hp-20240624-value-editorial-balletflatsU75">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P241119_editorial_ballet?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Ballet Flats Under $75">
+                            </a>
+                            <h3 class="card-header">
+                                <a href="/category/womens/shoes/flats?price_range=-75&amp;style=Ballet&amp;cm_re=hp-hp-20240624-value-editorial-balletflatsU75">Ballet Flats Under $75</a>
+                            </h3>
+                            <p class="card-subheader"></p>
+                        </div>
+        
+                        <!-- Card 2: Men’s Casual Under $75 -->
+                        <div class="card">
+                            <a href="/category/mens/shoes/casual?price_range=-75&amp;cm_re=hp-hp-20240624-value-editorial-mcasualunder75">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P241119_editorial_casual?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Men’s Casual Under $75">
+                            </a>
+                            <h3 class="card-header">
+                                <a href="/category/mens/shoes/casual?price_range=-75&amp;cm_re=hp-hp-20240624-value-editorial-mcasualunder75">Men’s Casual Under $75</a>
+                            </h3>
+                            <p class="card-subheader"></p>
+                        </div>
+        
+                        <!-- Card 3: Men’s Slides Under $50 -->
+                        <div class="card">
+                            <a href="/category/mens/shoes/sandals?price_range=-50&amp;style=Slide&amp;cm_re=hp-hp-20240624-value-editorial-mslidesU50">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P241119_editorial_slides?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Men’s Slides Under $50">
+                            </a>
+                            <h3 class="card-header">
+                                <a href="/category/mens/shoes/sandals?price_range=-50&amp;style=Slide&amp;cm_re=hp-hp-20240624-value-editorial-mslidesU50">Men’s Slides Under $50</a>
+                            </h3>
+                            <p class="card-subheader"></p>
+                        </div>
+        
+                        <!-- Card 4: Handbags Under $40 -->
+                        <div class="card">
+                            <a href="/category/accessories/bags?price_range=-40&amp;cm_re=hp-hp-20240624-value-editorial-handbagsunder40">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P241015_editorial_handbags?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Handbags Under $40">
+                            </a>
+                            <h3 class="card-header">
+                                <a href="/category/accessories/bags?price_range=-40&amp;cm_re=hp-hp-20240624-value-editorial-handbagsunder40">Handbags Under $40</a>
+                            </h3>
+                            <p class="card-subheader"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="editorial-widget-container">
+            <div class="editorial-widget spacing-side--inset">
+                <div class="editorial-widget__header">
+                    <h2 class="dbi-heading-3">More Can’t-Miss Deals</h2>
+                </div>
+                <div class="editorial-widget__body">
+                    <div class="card-container">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <a href="/category/womens/clearance?cm_re=hp-hp-20240620-valuegraphic-editorial-wclearance">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P221473_funnel_w-clearance?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Fresh Markdowns">
+                            </a>
+                            <h3><a href="/category/womens/clearance?cm_re=hp-hp-20240620-valuegraphic-editorial-wclearance">Fresh Markdowns</a></h3>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <a href="/category/mens/clearance?cm_re=hp-hp-20240620-valuegraphic-editorial-mclearance">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P221473_funnel_m-clearance?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Fresh Markdowns">
+                            </a>
+                            <h3><a href="/category/mens/clearance?cm_re=hp-hp-20240620-valuegraphic-editorial-mclearance">Fresh Markdowns</a></h3>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <a href="/category/womens/shoes/sandals/under-40?cm_re=hp-hp-20240620-valuegraphic-editorial-wsandalsunder40">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P221473_funnel_under40?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Women's Sandals">
+                            </a>
+                            <h3><a href="/category/womens/shoes/sandals/under-40?cm_re=hp-hp-20240620-valuegraphic-editorial-wsandalsunder40">Women's Sandals</a></h3>
+                        </div>
+
+
+                        <div class="card">
+                            <a href="/category/shoes/athletic-sneakers">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P221473_funnel_under75?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Women's & Men's Sneakers">
+                                <h3>Women's & Men's Sneakers</h3>
+                            </a>
+                        </div>
+                    
+                        <div class="card">
+                            <a href="/category/kids/shoes/athletic-sneakers">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P221473_funnel_under50?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Kid's Sneakers">
+                                <h3>Kid's Sneakers</h3>
+                            </a>
+                        </div>
+                    
+                        <div class="card">
+                            <a href="/category/accessories/bags">
+                                <img src="https://images.dsw.com/is/image/DSWShoes/P221473_funnel_under40?impolicy=qlt-medium&amp;imwidth=1011&amp;imdensity=1" alt="Handbags">
+                                <h3>Handbags</h3>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-section">
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="https://images.dsw.com/is/image/DSWShoes/P240357_ft_birk-colorwheel?impolicy=qlt-medium&amp;imwidth=1400&amp;imdensity=1"
+                         alt="A Rainbow of Birkenstock"
+                         class="image"
+                    >
+                    <div class="overlay">
+                        <h2>A Rainbow of Birkenstock</h2>
+                        <p>Find your favorite lightweight, water-friendly sandals in your favorite color. Shop Birkenstock Colorful Sandals</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="image-section">
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="https://images.dsw.com/is/image/DSWShoes/P240795_ft_under75?impolicy=qlt-medium&amp;imwidth=1400&amp;imdensity=1"
+                         alt="Under $75 Sneakers"
+                         class="image"
+                    >
+                    <div class="overlay">
+                        <h2>Under $75</h2>
+                        <p>Find this season’s best sneakers at the best prices. Shop Women's. Shop Men's.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="image-section">
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="https://images.dsw.com/is/image/DSWShoes/P240836_ft_nike?impolicy=qlt-medium&amp;imwidth=1400&amp;imdensity=1"
+                         alt="Heating Up This Season"
+                         class="image"
+                    >
+                    <div class="overlay">
+                        <h2>Heating Up This Season</h2>
+                        <p>The temps and your summer lineup. Shop Nike. Shop All Sneakers.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="image-section">
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="https://images.dsw.com/is/image/DSWShoes/P240730_ft_crocs?impolicy=qlt-medium&amp;imwidth=1400&amp;imdensity=1"
+                         alt="Go Mega Mode with Minions"
+                         class="image"
+                    >
+                    <div class="overlay">
+                        <h2>Go Mega Mode with Minions</h2>
+                        <p>Join the Gru Crew with the new Minions Classic Clog from Crocs. Shop Crocs.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- ............................. -->
+          <div class="container">
+        <h2>Summer Must-Have Brands</h2>
+        <div class="card-container">
+            <div class="card">
+                <a href="/brands/clarks?cm_re=hp-hp-20240617-brandpartner-editorial-clarks">
+                    <img src="https://images.dsw.com/is/image/DSWShoes/P240889_editorial_clarks?impolicy=qlt-medium&imwidth=1011&imdensity=2" alt="Ultra-Comfy Sandals">
+                    <h3>Ultra-Comfy Sandals</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/brands/puma?cm_re=hp-hp-20240617-brandpartner-editorial-puma">
+                    <img src="https://images.dsw.com/is/image/DSWShoes/P240889_editorial_puma?impolicy=qlt-medium&imwidth=1011&imdensity=2" alt="Can’t-Miss Kicks">
+                    <h3>Can’t-Miss Kicks</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/brands/asics?cm_re=hp-hp-20240617-brandpartner-editorial-asics">
+                    <img src="https://images.dsw.com/is/image/DSWShoes/P240761_editorial_asics?impolicy=qlt-medium&imwidth=1011&imdensity=2" alt="Always-in Favorites">
+                    <h3>Always-in Favorites</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/brands/reef?cm_re=hp-hp-20240617-brandpartner-editorial-reef">
+                    <img src="https://images.dsw.com/is/image/P240641_editorial_reef?impolicy=qlt-medium&imwidth=1011&imdensity=2" alt="Sandal-Season Go-Tos">
+                    <h3>Sandal-Season Go-Tos</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+<div class="colorlib-partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 text-center colorlib-heading colorlib-heading-sm">
+                <h2>Shop All the Best Brands</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col partner-col text-center">
+                <img src="images/brand-1.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="images/brand-2.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="images/brand-3.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="images/brand-4.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+            <div class="col partner-col text-center">
+                <img src="images/brand-5.jpg" class="img-fluid" alt="Free html4 bootstrap 4 template">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <!-- Footer Section -->
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">Email Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">1.866.379.7463</a></li>
+                    <li><a href="#">Store Finder</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                </ul>
+                <div class="footer-section">
+            </div>
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Create an Account</a></li>
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="#">DSW VIP</a></li>
+                    <li><a href="#">DSW Rewards</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About DSW</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Designer Brands Inc.</a></li>
+                    <li><a href="#">Philanthropy</a></li>
+                    <li><a href="#">Potential Suppliers</a></li>
+                    <li><a href="#">The W Nail Bar</a></li>
+                    <li><a href="#">Shoe Repair</a></li>
+                    <li><a href="#">Fashion & Resource</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Slides</a></li>
+                    <li><a href="#">Platform Boots</a></li>
+                    <li><a href="#">Slippers</a></li>
+                    <li><a href="#">Boots</a></li>
+                    <li><a href="#">Sandals</a></li>
+                    <li><a href="#">Running Shoes</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Rain Boots</a></li>
+                    <li><a href="#">Chelsea Boots</a></li>
+                    <li><a href="#">Dress Shoes</a></li>
+                    <li><a href="#">Cowboy Boots</a></li>
+                    <li><a href="#">Heels</a></li>
+                    <li><a href="#">Work & Safety</a></li>
+                    <li><a href="#">Clearance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="newsletter">
+                <h3>We Inspire Self-Expression</h3>
+                <p>Sign Up For Emails & Get 10% Off!*</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/dsw/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/DSW" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@dsw" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.pinterest.com/dsw/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                <a href="https://x.com/dsw_us" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@dswshoewarehouse" target="_blank"><i class="fab fa-youtube"></i></a>
+            
+            </div>
+            <div class="app-download">
+                <a href="https://apps.apple.com/us/app/dsw-designer-shoe-warehouse/id918263528" target="_blank"><img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-12-21&kind=iossoftware&bubble=ios_apps" alt="Download on the App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.dsw.android" target="_blank"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play"></a>
+           </div>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2024 Designer Brands. All rights reserved</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">California Privacy Notice</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Supply Chain Transparency</a></li>
+                <li><a href="#">Your Privacy Choices</a></li>
+                <li><a href="#">Accessibility Statement</a></li>
+                <li><a href="#">Pricing & Exclusions</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+                <li><a href="#">Comp. Value Details</a></li>
+        </div>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+/* CSS for Editorial Tiles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px; /* Adjust for spacing between cards */
+    margin-left: -15px; /* Adjust for spacing between cards */
+}
+
+.editorial__tile {
+    width: calc(33.33% - 30px); /* 3 cards per row, adjust margins */
+    margin: 15px; /* Adjust for spacing between cards */
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editorial__tile__container {
+    position: relative;
+}
+
+.editorial__tile__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px 3px 0 0;
+}
+
+.editorial__tile__header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.editorial__tile__header--copy {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.editorial__tile__sub-header {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .editorial__tile {
+        width: calc(50% - 30px); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .editorial__tile {
+        width: calc(100% - 30px); /* 1 card per row on small screens */
+    }
+}
+
+
+
+/* High temp card */
+
+.editorial-widget-container {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 1425px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.editorial-widget {
+    padding: 20px;
+}
+
+.editorial-widget__header {
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc((100% - 40px) / 3); /* Adjust width based on container size and margins */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card a {
+    display: block;
+}
+
+.card img {
+    width: 315.26px;
+    height: 393.4px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.card-subheader {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* More Can’t-Miss Deals */
+
+.editorial-widget-container {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.editorial-widget {
+    padding: 20px;
+}
+
+.editorial-widget__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editorial-widget__header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.editorial-widget__body {
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+.card-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.card {
+    width: 390.98px;
+    height: 293.37px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Image card section */
+
+.image-section {
+    position: relative;
+    width: 100%;
+    max-width: 1600px; /* Set max-width to ensure it doesn't exceed 1600px */
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+.overlay:hover {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+/* ........... */
+
+.image-section {
+    position: relative;
+    width: 100%;
+    max-width: 1600px; /* Set max-width to ensure it doesn't exceed 1600px */
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    display: block;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+.overlay:hover {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* ................................ */
+.image-section {
+    position: relative;
+    width: 100%;
+    max-width: 1600px; /* Set max-width to ensure it doesn't exceed 1600px */
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    display: block;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+.overlay:hover {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+/* ............................................. */
+
+.image-section {
+    position: relative;
+    width: 100%;
+    max-width: 1600px; /* Set max-width to ensure it doesn't exceed 1600px */
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    display: block;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s ease;
+    opacity: 0; /* Initially hidden */
+}
+
+.overlay:hover {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* before the brand section cards */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between cards */
+    max-width: 1730px;
+    margin: 0 auto;
+    justify-content: center; /* Center align cards horizontally */
+}
+
+.card {
+    width: calc(33.33% - 20px); /* Each card takes up one-third of the container width with gap */
+    height: 487.91px; /* Height of each card */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
